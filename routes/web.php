@@ -169,10 +169,10 @@ Route::get('post','PostsController@posts');
 | 
 */
 
-// Route::get('/findwhere',function(){
-// 	$posts = Post::where('id',4)->orderBy('id','desc')->take(1)->get();
-// 	return $posts;
-// });
+Route::get('/findwhere',function(){
+	$posts = Post::where('id',4)->orderBy('id','desc')->take(1)->get();
+	return $posts;
+});
 
 
 /*
@@ -182,4 +182,6 @@ Route::get('post','PostsController@posts');
 |
 | 
 */
+
+
 
